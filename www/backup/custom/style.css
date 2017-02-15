@@ -1,0 +1,55 @@
+
+body {
+    cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.header .col {
+    background-color:lightgrey;
+}
+
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
+
+/*custom is class added to ion-content*/
+ 
+.side-menu-left {
+  background-color: #3f4041 !important; /* This sets the background color*/
+ }
+ 
+/*Set the background to transparent for ion-item*/
+.side-menu-left .item {
+  background-color: transparent;
+  border:none;   /*Removes all borders*/
+  border-top: 1px solid;   /*Top Border for each menu item*/
+  border-bottom:2px solid;   /*Bottom border for each menu item*/
+  border-color: #666;   /*Sets colors for top and bottom border*/
+  color: white;    /*Text color for each item*/
+}
+ 
+/*Changes the border for the last item*/
+.side-menu-left .item:last-child {
+  border-bottom: 1px solid #666;
+}
+ 
+.side-menu-left .item-complex .item-content, .dark .item-radio .item-content {
+  background-color: transparent;
+}
+ 
+/*Just makes the type white*/
+.side-menu-left h2,
+.side-menu-left h3,
+.side-menu-left p,
+.side-menu-left a {
+  color: white;  /*Text color for each item, overrides the color property above*/
+}

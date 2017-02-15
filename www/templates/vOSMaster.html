@@ -1,0 +1,17 @@
+<ion-view style="" class=" " id="page1" title="VOS Master">
+    <ion-content class="has-header" padding="true">
+	<ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="doRefresh()">
+	</ion-refresher>
+		<ion-scroll zooming="false" direction="y">
+			<div style="width: 283px; height: 0px;" class="spacer"></div>
+			<h3 class=" "  style="color: rgb(63, 144, 177); text-align: center;" id="vOSMaster-heading1">Live Calls</h3>
+			<p class=" " ng-model="liveCalls" style="color:#000000;text-align:center;" id="vOSMaster-markdown3">{{liveCalls}}</p>
+			<div style="width: 283px; height: 15px;" class="spacer"></div>
+			<div style="width: 283px; height: 65px;" class="spacer"></div>
+			<h3 class=" " style="color: rgb(63, 144, 177); text-align: center;" id="vOSMaster-heading2">Last Hour ACD</h3>
+			<p class=" " ng-model="lhACD" style="color:#000000;text-align:center;" id="vOSMaster-markdown4">{{lhACD}}</p>
+		<ion-scroll>
+    </ion-content>
+</ion-view>

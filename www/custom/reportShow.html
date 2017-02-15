@@ -1,0 +1,16 @@
+<ion-view style="" class=" " id="page14" title="Report Show">
+    <ion-content class="has-header" padding="true">
+	<div class="row header text-center">
+		<div class="col"><h2>ID</h2></div>
+		<div class="col"><h2>Total Call</h2></div>
+		<div class="col"><h2>ASR <br><h5>%</h5></h2></div>
+		<div class="col"><h2>ACD <br><h5>Sec</h5></h2></div>
+	</div>
+	<div class="row text-center " ng-repeat="data in reportData">
+		<div class="col">{{data.id}}</div>
+		<div class="col" >{{data.totalCall}}</div>
+		<div class="col">{{data.asr}}</div>
+		<div class="col" >{{data.acd}}</div>
+	</div>
+	</ion-content>
+</ion-view>

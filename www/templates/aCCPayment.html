@@ -1,0 +1,25 @@
+<ion-view style="" class=" " id="page11" title="ACC Payment">
+    <ion-content class="has-header" scroll="false" padding="true">
+	<ion-scroll zooming="false" direction="y">
+        <form class="list " id="aCCPayment-form3">
+            <label id="aCCPayment-select1" class="item item-select ">
+                <span  class="input-label">ACC ID</span>
+                <select ng-model="input.selectedID">
+				<option ng-repeat="data in itemList" value="{{data[0]}}">{{data[1]}}</option>
+				</select>
+            </label>
+            <label id="aCCPayment-input5" class="item item-input ">
+                <span  class="input-label">Amount</span>
+                <input ng-model="input.amount" placeholder="Enter Amount" type="number">
+            </label>
+            <label id="aCCPayment-input6" class="item item-input ">
+                <span class="input-label">Memo</span>
+                <input ng-model="input.memo" placeholder="Enter Memo" type="text">
+            </label>
+        </form>
+        <div style="margin-right:-20px;">
+            <button class=" button button-positive  button-full " style="left:-10px;" id="aCCPayment-button6" ng-click="submitData(input)">Submit</button>
+        </div>
+		<ion-scroll>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,12 @@
+<ion-view style="" class=" " id="page8" title="Online Mapping">
+    <ion-content class="has-header" padding="true">
+	<div class="row header text-center">
+		<div class="col"><h2>Customer Name</h2></div>
+		<div class="col"><h2>Total Call</h2></div>
+	</div>
+	<div class="row text-center " ng-repeat="data in mapData">
+		<div class="col">{{data.customerName}}</div>
+		<div class="col" >{{data.totalCall}}</div>
+	</div>
+	</ion-content>
+</ion-view>

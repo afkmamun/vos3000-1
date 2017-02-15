@@ -1,0 +1,17 @@
+<ion-view style="" class=" " id="page8" title="Online Mapping">
+    <ion-content class="has-header" scroll="true" padding="false">
+	
+	<div class="row header text-center">
+		<div class="col"><h4  class="stable">Customer Name</h2></div>
+		<div class="col"><h4 class="stable">Total Call</h2></div>
+	</div>
+	<ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="doRefresh()">
+	</ion-refresher>
+	<div class="row text-center " ng-repeat="data in mappingItemList">
+		<div class="col">{{data[1]}}</div>
+		<div class="col" >{{data[2]}}</div>
+	</div>
+	</ion-content>
+</ion-view>

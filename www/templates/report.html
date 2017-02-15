@@ -1,0 +1,48 @@
+<ion-view style="" class=" " id="page9" title="Report">
+    <ion-content class="has-header" scroll="true" padding="true">
+	<ion-scroll zooming="false" direction="y">
+        <form class="list " id="report-form5">
+            <label id="report-select2" class="item item-select ">
+                <span class="input-label">ACC ID</span>
+                <select ng-model="input.selectedAccID">
+				<option ng-repeat="data in itemList" value="{{data[0]}}">{{data[1]}}</option>
+				</select>
+            </label>
+            <label id="report-input9" class="item item-select ">
+                 <span class="input-label">Routing ID</span>
+                <select ng-model="input.selectedRoutingID">
+				
+				<option ng-repeat="data in routeList" value="{{data[0]}}">{{data[1]}}</option>
+				</select>
+            </label>
+			 <label id="report-select4" class="item item-select ">
+                 <span class="input-label">Beginning Date</span>
+				  <input ng-model="input.bDate" placeholder="Time" type="date">
+            </label>
+			  <label id="report-select3" class="item item-select ">
+                 <span class="input-label">Beginning Time</span>
+				  <input ng-model="input.bTime" placeholder="Enter Time" type="time">
+            </label>
+			 <label id="report-select6" class="item item-select ">
+               <span class="input-label">End Date</span>
+               <input ng-model="input.eDate" placeholder="Enter Date & Time" type="date">
+            </label>
+			<label id="report-select5" class="item item-select ">
+               <span class="input-label">End Time</span>
+               <input ng-model="input.eTime" placeholder="Enter Date & Time" type="time">
+            </label>
+            <label id="report-select7" class="item item-select ">
+                <span class="input-label">By Caller/Callee</span>
+                <select ng-model="input.coc">
+					<option  value="Callee">Callee</option>
+					<option  value="Caller">Caller</option>
+				</select>
+            </label>
+            <div style="width: 283px; height: 28px;" class="spacer"></div>
+            <div style="margin-right:-20px;">
+                <a class=" button button-positive button-large button-full " style="left:-10px;border-radius:0px 0px 0px 0px;" id="report-button8"  ng-click="submitData(input)">Submit</a><!--ui-sref="menu.reportShow"-->
+            </div>
+        </form>
+		</ion-scroll>
+    </ion-content>
+</ion-view>

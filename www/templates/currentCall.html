@@ -1,0 +1,52 @@
+<ion-view style="" class=" " id="page13" title="Current Call">
+    <ion-content class="has-header"  scroll="true" padding="false">
+		<ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="doRefresh()">
+		</ion-refresher>
+	
+	<div style="height: 30px;" class="spacer"></div>
+	<canvas id="pie" class="chart chart-pie"
+	  chart-colors="colors" chart-data="data" chart-labels="labels">
+	</canvas> 
+	<div style="height: 30px;" class="spacer"></div>
+	<div class="row text-center ">
+		<div class="col"> <img ="left" ng-src="img/total.gif"/></div>
+		<div class="col positive" align="left"  style="font-size:17px;line-height:50px;">Total:</div>
+		<div class="col " align="left" ng-model="liveCalls"  style="font-size:17px;line-height:50px;">{{liveCalls}}</div>
+	</div>
+	<div class="row text-center ">
+		
+	</div>
+	<div class="row text-center" >
+		<div class="col">  <img  ng-src="img/processing.GIF"/></div>
+		<div class="col royal" align="left" style="font-size:17px;line-height:50px;">Processing:</div>
+		<div class="col" align="left" ng-model="processingCalls"  style="font-size:17px;line-height:50px;" >{{processingCalls}} </div>
+	</div>
+	<div class="row text-center ">
+		
+	</div>
+	<div class="row text-center">
+		<div class="col" ><img  ng-src="img/connected.gif"/></div>
+		<div class="col assertive" align="left"  style="font-size:17px;line-height:50px;" >Connected:</div>
+		<div class="col " align="left" ng-model="connectedCalls"  style="font-size:17px;line-height:50px;">{{connectedCalls}}</div>
+	</div>
+<!--N	<div style="height: 40px;" class="spacer"></div>
+        <div   class="spacer"></div>
+        <ion-list class=" manual-list-fullwidth " id="currentCall-list6">
+            <ion-item ng-model="liveCalls" align="left" style="font-weight:bold" id="currentCall-list-item15" class="positive  ">
+               <!-- <i class="icon ion-disc"><img ng-src="../img/total.gif"/></i>Total Call: 404-->
+<!--N			   <img align="left" ng-src="img/total.gif"/> Total Call: {{liveCalls}}         
+			</ion-item >
+            <ion-item ng-model="processingCalls" style="font-weight:bold" align="left" id="currentCall-list-item16" class="royal  ">
+               <!-- <i class="icon ion-ionic"><img ng-src="../img/processing.gif"/></i>Processing: 14</ion-item>-->
+<!--N			   <img align="left" ng-src="img/processing.GIF"/>&nbsp;&nbsp;&nbsp;&nbsp;Processing: {{processingCalls}}  
+			   </ion-item>
+            <ion-item ng-model="connectedCalls" align="left" style="font-weight:bold" id="currentCall-list-item17" class=" assertive  ">
+               <!-- <i class="icon ion-earth"><img ng-src="../img/connected.gif"/></i>Connected: 390</ion-item>-->
+<!--N			  <img align="right" ng-src="img/connected.gif"/>Connected: {{connectedCalls}}  
+			  </ion-item>
+        </ion-list> N-->
+		
+    </ion-content>
+</ion-view>

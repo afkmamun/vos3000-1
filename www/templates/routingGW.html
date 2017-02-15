@@ -1,0 +1,28 @@
+<ion-view style="" class=" " id="page10" title="Routing GW">
+    <ion-content class="has-header" scroll="true" padding="true">
+	<ion-scroll zooming="false" direction="y">
+        <form class="list " id="routingGW-form6">
+            <label id="routingGW-select8" class="item item-select ">
+                <span class="input-label">Routing ID</span>
+                <select ng-model="input.selectedID">
+					<option ng-repeat="data in routingItemList" value="{{data[0]}}">{{data[1]}}</option>
+				</select>
+            </label>
+            <label id="routingGW-input11" class="item item-input ">
+                <span class="input-label">Capacity</span>
+                <input ng-model="input.capacity" placeholder="Enter Capacity" type="number">
+            </label>
+          <!--  <label id="routingGW-select7" class="item item-select ">
+                <span class="input-label">On/Off</span>
+                <select>
+                    <option>On</option>
+                    <option>Off</option>
+                </select>
+            </label>-->
+        </form>
+        <div style="margin-right:-20px;">
+            <button class=" button button-positive  button-full " style="left:-10px;" id="routingGW-button9" ng-click="submitData(input)">Submit</button>
+        </div>
+		<ion-scroll>
+    </ion-content>
+</ion-view>
